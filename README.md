@@ -5,7 +5,13 @@
     curl https://raw.githubusercontent.com/burnettk/delete-docker-registry-image/master/delete_docker_registry_image.py | sudo tee /usr/local/bin/delete_docker_registry_image >/dev/null
     sudo chmod a+x /usr/local/bin/delete_docker_registry_image
 
-## Run
+## Run shell
+
+	Usage: ./delete_docker_registry_image.sh <HARBOR_URL> <registry_name> <repo_name> <pre_tag>
+
+	Example: ./delete_docker_registry_image.sh 192.168.1.214 dataman_registry_1 library/blackicebird-2048  latest
+
+## Run python 
 
 Set up your data directory via an environment variable:
 
