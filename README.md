@@ -5,17 +5,21 @@
     curl https://raw.githubusercontent.com/burnettk/delete-docker-registry-image/master/delete_docker_registry_image.py | sudo tee /usr/local/bin/delete_docker_registry_image >/dev/null
     sudo chmod a+x /usr/local/bin/delete_docker_registry_image
 
-## Run delete harbor registry
+## Run batch delete harbor registry
 
 	Usage: ./delete_harbor_registry_image.sh <HARBOR_URL> <registry_name> <repo_name> <pre_tag>
 
 	Example: ./delete_harbor_registry_image.sh 192.168.1.214 dataman_registry_1 library/blackicebird-2048  latest
+	
+	Attention: pre_tag parameter is the match tag beginning, end fuzzy query
 
-## Run delete sry registry
+## Run batch delete sry registry
 
 	Usage: ./delete_sry_registry_image.sh -l|--sryurl <url> -u|--sryuser <username> -p|--srypasswd <passwd> -n|--registryname <registryname> -s|--namespace <namespace> -i|--imagename <imagename> -t|--pretag <pretag>
 
 	Example: ./delete_sry_registry_image.sh -l 192.168.1.214:81 -u dataman -p Admin1234 -n dataman-registry -s dataman/library -i blackicebird-2048 -t latest
+	
+	Attention: pre_tag parameter is the match tag beginning, end fuzzy query
 
 ## Run
 
