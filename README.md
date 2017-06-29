@@ -11,6 +11,12 @@
 
 	Example: ./delete_harbor_registry_image.sh 192.168.1.214 dataman_registry_1 library/blackicebird-2048  latest
 
+## Run delete sry registry
+
+	Usage: ./delete_sry_registry_image.sh -l|--sryurl <url> -u|--sryuser <username> -p|--srypasswd <passwd> -n|--registryname <registryname> -s|--namespace <namespace> -i|--imagename <imagename> -t|--pretag <pretag>
+
+	Example: ./delete_sry_registry_image.sh -l 192.168.1.214:81 -u dataman -p Admin1234 -n dataman-registry -s dataman/library -i blackicebird-2048 -t latest
+
 ## Run
 
 Set up your data directory via an environment variable:

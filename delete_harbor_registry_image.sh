@@ -28,7 +28,7 @@ docker stop $registry_name
 
 for tag in $tags
 do
-	./delete_docker_registry_image.py --image ${repo_name}:$tag
+	./delete_docker_registry_image.py --image ${repo_name}:$tag -u
 done
 
 echo "start $registry_name"
