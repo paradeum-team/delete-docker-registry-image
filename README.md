@@ -21,6 +21,14 @@
 	
 	Attention: pre_tag parameter is the match tag beginning, end fuzzy query
 
+## Run delete offline  registry
+
+	Usage: ./delete_offline_registry_image.sh <imagename>[:tag]
+
+	Examle: ./delete_offline_registry_image.sh library/blackicebird-2048
+
+	Examle: ./delete_offline_registry_image.sh library/blackicebird-2048:latest
+
 ## Run
 
 Set up your data directory via an environment variable:
