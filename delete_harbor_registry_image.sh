@@ -7,7 +7,7 @@ set -e
 export REGISTRY_DATA_DIR=${REGISTRY_DATA_DIR:-/data/registry/docker/registry/v2}
 
 HARBOR_URL=${1:-192.168.1.214}
-registry_name=${2:-dataman_registry_1}
+registry_name=${2:-offline-registry}
 repo_name=$3
 pre_tag=$4
 
